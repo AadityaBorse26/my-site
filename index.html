@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John Doe - Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-code"></i> John Doe
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="projects.html">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-background">
+            <div class="hero-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-6">
+                    <div class="hero-content">
+                        <div class="hero-badge mb-3">
+                            <i class="fas fa-code me-2"></i>
+                            Available for Work
+                        </div>
+                        <h1 class="hero-title">Hello, I'm <span class="text-primary">John Doe</span></h1>
+                        <p class="hero-subtitle">Full-Stack Developer & UI/UX Designer</p>
+                        <p class="hero-description">
+                            I create beautiful, functional, and user-centered digital experiences. 
+                            With expertise in modern web technologies, I bring ideas to life through code.
+                        </p>
+                        <div class="hero-stats mb-4">
+                            <div class="stat-item">
+                                <h4>50+</h4>
+                                <p>Projects Completed</p>
+                            </div>
+                            <div class="stat-item">
+                                <h4>3+</h4>
+                                <p>Years Experience</p>
+                            </div>
+                            <div class="stat-item">
+                                <h4>100%</h4>
+                                <p>Client Satisfaction</p>
+                            </div>
+                        </div>
+                        <div class="hero-buttons">
+                            <a href="about.html" class="btn btn-primary btn-lg me-3">
+                                <i class="fas fa-user me-2"></i>Learn More
+                            </a>
+                            <a href="contact.html" class="btn btn-outline-primary btn-lg">
+                                <i class="fas fa-envelope me-2"></i>Get In Touch
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="hero-image-container">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&h=600&fit=crop&crop=face" 
+                             alt="Professional headshot of John Doe, a confident software developer" 
+                             class="hero-image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills-section py-5">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">Technical Skills</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="skill-card text-center">
+                        <i class="fas fa-code skill-icon"></i>
+                        <h4>Frontend Development</h4>
+                        <p>HTML5, CSS3, JavaScript, React, Vue.js</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="skill-card text-center">
+                        <i class="fas fa-server skill-icon"></i>
+                        <h4>Backend Development</h4>
+                        <p>Node.js, Python, PHP, MySQL, MongoDB</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="skill-card text-center">
+                        <i class="fas fa-mobile-alt skill-icon"></i>
+                        <h4>Mobile Development</h4>
+                        <p>React Native, Flutter, iOS, Android</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="education-section py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">Education</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="education-timeline">
+                        <div class="education-item">
+                            <div class="education-icon">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <div class="education-content">
+                                <h4>Bachelor of Science in Computer Science</h4>
+                                <p class="education-institution">University of Technology</p>
+                                <p class="education-duration">2015 - 2019</p>
+                                <p class="education-description">
+                                    Graduated with honors, focusing on software engineering and algorithms. 
+                                    Completed senior capstone project on machine learning applications.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="education-item">
+                            <div class="education-icon">
+                                <i class="fas fa-certificate"></i>
+                            </div>
+                            <div class="education-content">
+                                <h4>AWS Certified Solutions Architect</h4>
+                                <p class="education-institution">Amazon Web Services</p>
+                                <p class="education-duration">2022</p>
+                                <p class="education-description">
+                                    Certified in designing distributed systems on AWS platform, 
+                                    with expertise in cloud architecture and security best practices.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Projects Section -->
+    <section class="featured-projects-section py-5">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">Featured Projects</h2>
+            <div class="row">
+                <div class="col-lg-6 mb-4">
+                    <div class="featured-project-card">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop" 
+                             alt="E-commerce website dashboard showing analytics and sales data" 
+                             class="img-fluid rounded">
+                        <div class="project-content">
+                            <h4>E-Commerce Platform</h4>
+                            <p>A comprehensive e-commerce solution with React frontend and Node.js backend. Features include user authentication, payment processing, and real-time analytics.</p>
+                            <div class="tech-stack">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">Node.js</span>
+                                <span class="tech-tag">MongoDB</span>
+                                <span class="tech-tag">Stripe</span>
+                            </div>
+                            <a href="projects.html" class="btn btn-primary">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-4">
+                    <div class="featured-project-card">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop" 
+                             alt="Data visualization dashboard with charts and graphs" 
+                             class="img-fluid rounded">
+                        <div class="project-content">
+                            <h4>Analytics Dashboard</h4>
+                            <p>Interactive data visualization tool built with D3.js and Python. Real-time charts and graphs for business intelligence and decision making.</p>
+                            <div class="tech-stack">
+                                <span class="tech-tag">D3.js</span>
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Flask</span>
+                                <span class="tech-tag">PostgreSQL</span>
+                            </div>
+                            <a href="projects.html" class="btn btn-primary">View Project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work Experience Section -->
+    <section class="work-experience-section py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">Work Experience</h2>
+            <div class="experience-timeline">
+                <div class="experience-item">
+                    <div class="experience-date">
+                        <span class="date">2022 - Present</span>
+                    </div>
+                    <div class="experience-content">
+                        <h4>Senior Full-Stack Developer</h4>
+                        <p class="company">TechCorp Solutions</p>
+                        <p class="description">Led team of 5 developers, improved app performance by 40%. Built scalable web applications using React, Node.js, and AWS.</p>
+                        <div class="tech-used">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">AWS</span>
+                            <span class="tech-tag">Docker</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="experience-item">
+                    <div class="experience-date">
+                        <span class="date">2020 - 2022</span>
+                    </div>
+                    <div class="experience-content">
+                        <h4>Frontend Developer</h4>
+                        <p class="company">StartupXYZ</p>
+                        <p class="description">Built responsive web applications for 10,000+ users. Implemented modern UI/UX designs and optimized performance.</p>
+                        <div class="tech-used">
+                            <span class="tech-tag">Vue.js</span>
+                            <span class="tech-tag">TypeScript</span>
+                            <span class="tech-tag">Sass</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="experience-item">
+                    <div class="experience-date">
+                        <span class="date">2019 - 2020</span>
+                    </div>
+                    <div class="experience-content">
+                        <h4>Junior Developer</h4>
+                        <p class="company">WebDesign Co.</p>
+                        <p class="description">Developed 20+ client websites, maintained 95% client satisfaction. Gained experience in full-stack development.</p>
+                        <div class="tech-used">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">PHP</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section py-5">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">What Clients Say</h2>
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <div class="stars mb-3">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="testimonial-text">"John delivered an exceptional e-commerce platform that exceeded our expectations. His attention to detail and technical expertise made the project a huge success."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=60&h=60&fit=crop&crop=face" 
+                                 alt="Client testimonial from Sarah Johnson" 
+                                 class="author-image">
+                            <div class="author-info">
+                                <h6>Sarah Johnson</h6>
+                                <p class="author-title">CEO, TechStart Inc.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <div class="stars mb-3">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="testimonial-text">"Working with John was a pleasure. He transformed our complex requirements into a beautiful, user-friendly application that our customers love."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=60&h=60&fit=crop&crop=face" 
+                                 alt="Client testimonial from Michael Chen" 
+                                 class="author-image">
+                            <div class="author-info">
+                                <h6>Michael Chen</h6>
+                                <p class="author-title">CTO, DataFlow Systems</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <div class="stars mb-3">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="testimonial-text">"John's mobile app development skills are outstanding. He created a cross-platform solution that works flawlessly on both iOS and Android."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?w=60&h=60&fit=crop&crop=face" 
+                                 alt="Client testimonial from Emily Rodriguez" 
+                                 class="author-image">
+                            <div class="author-info">
+                                <h6>Emily Rodriguez</h6>
+                                <p class="author-title">Product Manager, MobileFirst</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="footer bg-dark text-light py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <h5>John Doe</h5>
+                    <p>Full-Stack Developer passionate about creating exceptional digital experiences.</p>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-light">Home</a></li>
+                        <li><a href="projects.html" class="text-light">Projects</a></li>
+                        <li><a href="about.html" class="text-light">About</a></li>
+                        <li><a href="contact.html" class="text-light">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <h5>Connect With Me</h5>
+                    <div class="social-links">
+                        <a href="https://linkedin.com" class="text-light me-3"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com" class="text-light me-3"><i class="fab fa-github"></i></a>
+                        <a href="https://twitter.com" class="text-light me-3"><i class="fab fa-twitter"></i></a>
+                        <a href="mailto:john@example.com" class="text-light"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p>&copy; 2024 John Doe. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
