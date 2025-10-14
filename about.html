@@ -44,80 +44,291 @@
             <div class="row align-items-start">
                 <div class="col-lg-6">
                     <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=500&fit=crop&crop=face" 
-                         alt="Professional headshot of John Doe in a modern office setting" 
+                         alt="Professional headshot of Aaditya Borse in a modern office setting" 
                          class="img-fluid rounded shadow-lg about-profile-img profile-img-offset">
                 </div>
                 <div class="col-lg-6">
                     <div class="about-intro-content">
-                        <h1 class="display-4 fw-bold text-white mb-4">Hello, I'm John</h1>
-                        <div class="intro-highlight mb-4">
-                            <h3 class="text-white mb-3">Full-Stack Developer & Problem Solver</h3>
-                            <p class="text-white mb-4">
-                                I transform complex ideas into elegant digital solutions. With over 5 years of experience, 
-                                I specialize in creating user-centered applications that make a real impact.
-                            </p>
-                        </div>
+                        <h1 class="display-4 fw-bold text-white mb-4">Hello, I'm Aaditya</h1>
+                        <h3 class="mb-3 text-white">Aspiring Software Developer & AI Researcher</h3>
+                        <p class="text-white mb-4">
+                            I'm passionate about software development with a strong foundation in computer science and a drive to create innovative solutions. 
+                            I am currently pursuing my Master's degree while working on research that pushes the intersection of HCI and AI.
+                        </p>
                         <div class="intro-blurb">
-                            <p class="text-white-50 mb-4">
+                            <p class="text-white mb-4">
                                 <em>"I believe technology should solve real problems and make people's lives better. 
                                 Every line of code I write is driven by this philosophy."</em>
                             </p>
                         </div>
                     </div>
-                    <div class="hero-buttons">
-                        <a href="contact.html" class="btn btn-transparent btn-lg">Get In Touch</a>
-                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Education Timeline Section -->
-    <section class="education-section py-5 bg-light-gradient">
+
+
+        <!-- Skills Breakdown -->
+        <section class="skills-breakdown py-5 bg-white-gradient">
+            <div class="container">
+                <h2 class="section-title text-center mb-5">Technical Expertise</h2>
+                <div class="row">
+                    <div class="col-lg-4 mb-4">
+                        <div class="skill-category clickable-skill" data-bs-toggle="modal" data-bs-target="#frontendModal">
+                            <h4 class="text-primary mb-3">
+                                <i class="fas fa-laptop-code me-2"></i>
+                                Frontend Development
+                            </h4>
+                            <ul class="list-unstyled">
+                                <li class="mb-2">
+                                    <i class="fas fa-check text-success me-2"></i>
+                                    React & React Native
+                                </li>
+                                <li class="mb-2">
+                                    <i class="fas fa-check text-success me-2"></i>
+                                    Vue.js & Angular
+                                </li>
+                                <li class="mb-2">
+                                    <i class="fas fa-check text-success me-2"></i>
+                                    TypeScript & JavaScript
+                                </li>
+                                <li class="mb-2">
+                                    <i class="fas fa-check text-success me-2"></i>
+                                    HTML5 & CSS3
+                                </li>
+                                <li class="mb-2">
+                                    <i class="fas fa-check text-success me-2"></i>
+                                    Sass & Less
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mb-4">
+                        <div class="skill-category clickable-skill" data-bs-toggle="modal" data-bs-target="#backendModal">
+                            <h4 class="text-primary mb-3">
+                                <i class="fas fa-server me-2"></i>
+                                Backend Development
+                            </h4>
+                            <ul class="list-unstyled">
+                                <li class="mb-2">
+                                    <i class="fas fa-check text-success me-2"></i>
+                                    Node.js & Express
+                                </li>
+                                <li class="mb-2">
+                                    <i class="fas fa-check text-success me-2"></i>
+                                    Python & Django
+                                </li>
+                                <li class="mb-2">
+                                    <i class="fas fa-check text-success me-2"></i>
+                                    PHP & Laravel
+                                </li>
+                                <li class="mb-2">
+                                    <i class="fas fa-check text-success me-2"></i>
+                                    RESTful APIs
+                                </li>
+                                <li class="mb-2">
+                                    <i class="fas fa-check text-success me-2"></i>
+                                    GraphQL
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mb-4">
+                        <div class="skill-category clickable-skill" data-bs-toggle="modal" data-bs-target="#devopsModal">
+                            <h4 class="text-primary mb-3">
+                                <i class="fas fa-cloud me-2"></i>
+                                DevOps & Tools
+                            </h4>
+                            <ul class="list-unstyled">
+                                <li class="mb-2">
+                                    <i class="fas fa-check text-success me-2"></i>
+                                    AWS & Azure
+                                </li>
+                                <li class="mb-2">
+                                    <i class="fas fa-check text-success me-2"></i>
+                                    Docker & Kubernetes
+                                </li>
+                                <li class="mb-2">
+                                    <i class="fas fa-check text-success me-2"></i>
+                                    CI/CD Pipelines
+                                </li>
+                                <li class="mb-2">
+                                    <i class="fas fa-check text-success me-2"></i>
+                                    Git & GitHub
+                                </li>
+                                <li class="mb-2">
+                                    <i class="fas fa-check text-success me-2"></i>
+                                    Monitoring & Logging
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <!-- Skill Modals -->
+        <!-- Frontend Modal -->
+        <div class="modal fade" id="frontendModal" tabindex="-1" aria-labelledby="frontendModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="frontendModalLabel">
+                            <i class="fas fa-laptop-code me-2"></i>Frontend Development Expertise
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p class="mb-4">I specialize in creating responsive, interactive user interfaces using modern frontend technologies.</p>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h6 class="text-primary">Core Technologies</h6>
+                                <ul class="list-unstyled">
+                                    <li><i class="fas fa-check text-success me-2"></i>React & React Native</li>
+                                    <li><i class="fas fa-check text-success me-2"></i>Vue.js & Angular</li>
+                                    <li><i class="fas fa-check text-success me-2"></i>TypeScript & JavaScript</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <h6 class="text-primary">Styling & Tools</h6>
+                                <ul class="list-unstyled">
+                                    <li><i class="fas fa-check text-success me-2"></i>HTML5 & CSS3</li>
+                                    <li><i class="fas fa-check text-success me-2"></i>Sass & Less</li>
+                                    <li><i class="fas fa-check text-success me-2"></i>Webpack & Vite</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="mt-4">
+                            <h6 class="text-primary">Experience</h6>
+                            <p>5+ years building scalable frontend applications with focus on performance, accessibility, and user experience.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Backend Modal -->
+        <div class="modal fade" id="backendModal" tabindex="-1" aria-labelledby="backendModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="backendModalLabel">
+                            <i class="fas fa-server me-2"></i>Backend Development Expertise
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p class="mb-4">I build robust, scalable backend systems and APIs that power modern web applications.</p>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h6 class="text-primary">Languages & Frameworks</h6>
+                                <ul class="list-unstyled">
+                                    <li><i class="fas fa-check text-success me-2"></i>Node.js & Express</li>
+                                    <li><i class="fas fa-check text-success me-2"></i>Python & Django</li>
+                                    <li><i class="fas fa-check text-success me-2"></i>PHP & Laravel</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <h6 class="text-primary">APIs & Integration</h6>
+                                <ul class="list-unstyled">
+                                    <li><i class="fas fa-check text-success me-2"></i>RESTful APIs</li>
+                                    <li><i class="fas fa-check text-success me-2"></i>GraphQL</li>
+                                    <li><i class="fas fa-check text-success me-2"></i>Microservices</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="mt-4">
+                            <h6 class="text-primary">Experience</h6>
+                            <p>5+ years developing backend systems with expertise in database design, API development, and system architecture.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- DevOps Modal -->
+        <div class="modal fade" id="devopsModal" tabindex="-1" aria-labelledby="devopsModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="devopsModalLabel">
+                            <i class="fas fa-cloud me-2"></i>DevOps & Tools Expertise
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p class="mb-4">I implement DevOps practices and cloud solutions to ensure reliable, scalable deployments.</p>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h6 class="text-primary">Cloud Platforms</h6>
+                                <ul class="list-unstyled">
+                                    <li><i class="fas fa-check text-success me-2"></i>AWS & Azure</li>
+                                    <li><i class="fas fa-check text-success me-2"></i>Google Cloud</li>
+                                    <li><i class="fas fa-check text-success me-2"></i>Digital Ocean</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <h6 class="text-primary">Containerization & CI/CD</h6>
+                                <ul class="list-unstyled">
+                                    <li><i class="fas fa-check text-success me-2"></i>Docker & Kubernetes</li>
+                                    <li><i class="fas fa-check text-success me-2"></i>CI/CD Pipelines</li>
+                                    <li><i class="fas fa-check text-success me-2"></i>Git & GitHub Actions</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="mt-4">
+                            <h6 class="text-primary">Experience</h6>
+                            <p>4+ years implementing DevOps practices, cloud infrastructure, and automated deployment pipelines.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    
+
+
+    <!-- Development Principles Section -->
+    <section class="principles-section py-5">
         <div class="container">
-            <h2 class="section-title text-center mb-5">Education & Certifications</h2>
             <div class="row justify-content-center">
                 <div class="col-lg-8">
-                    <div class="education-timeline">
-                        <div class="education-item">
-                            <div class="education-icon">
-                                <i class="fas fa-graduation-cap"></i>
-                            </div>
-                            <div class="education-content">
-                                <h4>Bachelor of Science in Computer Science</h4>
-                                <p class="education-institution">University of Technology</p>
-                                <p class="education-duration">2015 - 2019</p>
-                                <p class="education-description">
-                                    Graduated with honors, focusing on software engineering and algorithms. 
-                                    Completed senior capstone project on machine learning applications.
+                    <h2 class="section-title text-center mb-5 text-primary">My Development Principles</h2>
+                    <div class="row">
+                        <div class="col-lg-6 mb-4">
+                            <div class="principle-card">
+                                <h4 class="text-primary mb-3">User-Centered Design</h4>
+                                <p class="text-muted">
+                                    Every line of code should serve a purpose for the end user. Understanding user needs and pain points 
+                                    is the foundation of creating meaningful technology solutions.
                                 </p>
                             </div>
                         </div>
-                        <div class="education-item">
-                            <div class="education-icon">
-                                <i class="fas fa-certificate"></i>
-                            </div>
-                            <div class="education-content">
-                                <h4>AWS Certified Solutions Architect</h4>
-                                <p class="education-institution">Amazon Web Services</p>
-                                <p class="education-duration">2022</p>
-                                <p class="education-description">
-                                    Certified in designing distributed systems on AWS platform, 
-                                    with expertise in cloud architecture and security best practices.
+                        <div class="col-lg-6 mb-4">
+                            <div class="principle-card">
+                                <h4 class="text-primary mb-3">Data-Driven Decisions</h4>
+                                <p class="text-muted">
+                                    Evidence-based development leads to better outcomes. I rely on data analysis, user feedback, 
+                                    and measurable metrics to guide technical decisions and improvements.
                                 </p>
                             </div>
                         </div>
-                        <div class="education-item">
-                            <div class="education-icon">
-                                <i class="fas fa-certificate"></i>
+                        <div class="col-lg-6 mb-4">
+                            <div class="principle-card">
+                                <h4 class="text-primary mb-3">Continuous Learning</h4>
+                                <p class="text-muted">
+                                    Technology evolves rapidly, and so must our skills. I prioritize staying current with emerging 
+                                    technologies, AI research, and best practices in software development.
+                                </p>
                             </div>
-                            <div class="education-content">
-                                <h4>Google Cloud Professional Developer</h4>
-                                <p class="education-institution">Google Cloud</p>
-                                <p class="education-duration">2023</p>
-                                <p class="education-description">
-                                    Certified in building scalable applications on Google Cloud Platform, 
-                                    with expertise in cloud-native development and microservices architecture.
+                        </div>
+                        <div class="col-lg-6 mb-4">
+                            <div class="principle-card">
+                                <h4 class="text-primary mb-3">Ethical AI Development</h4>
+                                <p class="text-muted">
+                                    AI should augment human capabilities, not replace human judgment. I'm committed to developing 
+                                    AI systems that are transparent, fair, and beneficial to society.
                                 </p>
                             </div>
                         </div>
@@ -127,277 +338,51 @@
         </div>
     </section>
 
-    <!-- Skills Breakdown -->
-    <section class="skills-breakdown py-5 bg-white-gradient">
-        <div class="container">
-            <h2 class="section-title text-center mb-5">Technical Expertise</h2>
-            <div class="row">
-                <div class="col-lg-4 mb-4">
-                    <div class="skill-category clickable-skill" data-bs-toggle="modal" data-bs-target="#frontendModal">
-                        <h4 class="text-primary mb-3">
-                            <i class="fas fa-laptop-code me-2"></i>
-                            Frontend Development
-                        </h4>
-                        <ul class="list-unstyled">
-                            <li class="mb-2">
-                                <i class="fas fa-check text-success me-2"></i>
-                                React & React Native
-                            </li>
-                            <li class="mb-2">
-                                <i class="fas fa-check text-success me-2"></i>
-                                Vue.js & Angular
-                            </li>
-                            <li class="mb-2">
-                                <i class="fas fa-check text-success me-2"></i>
-                                TypeScript & JavaScript
-                            </li>
-                            <li class="mb-2">
-                                <i class="fas fa-check text-success me-2"></i>
-                                HTML5 & CSS3
-                            </li>
-                            <li class="mb-2">
-                                <i class="fas fa-check text-success me-2"></i>
-                                Sass & Less
-                            </li>
-                        </ul>
-                        <div class="click-hint">
-                            <i class="fas fa-mouse-pointer me-2"></i>Click for details
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 mb-4">
-                    <div class="skill-category clickable-skill" data-bs-toggle="modal" data-bs-target="#backendModal">
-                        <h4 class="text-primary mb-3">
-                            <i class="fas fa-server me-2"></i>
-                            Backend Development
-                        </h4>
-                        <ul class="list-unstyled">
-                            <li class="mb-2">
-                                <i class="fas fa-check text-success me-2"></i>
-                                Node.js & Express
-                            </li>
-                            <li class="mb-2">
-                                <i class="fas fa-check text-success me-2"></i>
-                                Python & Django
-                            </li>
-                            <li class="mb-2">
-                                <i class="fas fa-check text-success me-2"></i>
-                                PHP & Laravel
-                            </li>
-                            <li class="mb-2">
-                                <i class="fas fa-check text-success me-2"></i>
-                                RESTful APIs
-                            </li>
-                            <li class="mb-2">
-                                <i class="fas fa-check text-success me-2"></i>
-                                GraphQL
-                            </li>
-                        </ul>
-                        <div class="click-hint">
-                            <i class="fas fa-mouse-pointer me-2"></i>Click for details
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 mb-4">
-                    <div class="skill-category clickable-skill" data-bs-toggle="modal" data-bs-target="#devopsModal">
-                        <h4 class="text-primary mb-3">
-                            <i class="fas fa-cloud me-2"></i>
-                            DevOps & Tools
-                        </h4>
-                        <ul class="list-unstyled">
-                            <li class="mb-2">
-                                <i class="fas fa-check text-success me-2"></i>
-                                AWS & Azure
-                            </li>
-                            <li class="mb-2">
-                                <i class="fas fa-check text-success me-2"></i>
-                                Docker & Kubernetes
-                            </li>
-                            <li class="mb-2">
-                                <i class="fas fa-check text-success me-2"></i>
-                                CI/CD Pipelines
-                            </li>
-                            <li class="mb-2">
-                                <i class="fas fa-check text-success me-2"></i>
-                                Git & GitHub
-                            </li>
-                            <li class="mb-2">
-                                <i class="fas fa-check text-success me-2"></i>
-                                Monitoring & Logging
-                            </li>
-                        </ul>
-                        <div class="click-hint">
-                            <i class="fas fa-mouse-pointer me-2"></i>Click for details
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Skill Modals -->
-    <!-- Frontend Modal -->
-    <div class="modal fade" id="frontendModal" tabindex="-1" aria-labelledby="frontendModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="frontendModalLabel">
-                        <i class="fas fa-laptop-code me-2"></i>Frontend Development Expertise
-                    </h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <p class="mb-4">I specialize in creating responsive, interactive user interfaces using modern frontend technologies.</p>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <h6 class="text-primary">Core Technologies</h6>
-                            <ul class="list-unstyled">
-                                <li><i class="fas fa-check text-success me-2"></i>React & React Native</li>
-                                <li><i class="fas fa-check text-success me-2"></i>Vue.js & Angular</li>
-                                <li><i class="fas fa-check text-success me-2"></i>TypeScript & JavaScript</li>
-                            </ul>
-                        </div>
-                        <div class="col-md-6">
-                            <h6 class="text-primary">Styling & Tools</h6>
-                            <ul class="list-unstyled">
-                                <li><i class="fas fa-check text-success me-2"></i>HTML5 & CSS3</li>
-                                <li><i class="fas fa-check text-success me-2"></i>Sass & Less</li>
-                                <li><i class="fas fa-check text-success me-2"></i>Webpack & Vite</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="mt-4">
-                        <h6 class="text-primary">Experience</h6>
-                        <p>5+ years building scalable frontend applications with focus on performance, accessibility, and user experience.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Backend Modal -->
-    <div class="modal fade" id="backendModal" tabindex="-1" aria-labelledby="backendModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="backendModalLabel">
-                        <i class="fas fa-server me-2"></i>Backend Development Expertise
-                    </h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <p class="mb-4">I build robust, scalable backend systems and APIs that power modern web applications.</p>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <h6 class="text-primary">Languages & Frameworks</h6>
-                            <ul class="list-unstyled">
-                                <li><i class="fas fa-check text-success me-2"></i>Node.js & Express</li>
-                                <li><i class="fas fa-check text-success me-2"></i>Python & Django</li>
-                                <li><i class="fas fa-check text-success me-2"></i>PHP & Laravel</li>
-                            </ul>
-                        </div>
-                        <div class="col-md-6">
-                            <h6 class="text-primary">APIs & Integration</h6>
-                            <ul class="list-unstyled">
-                                <li><i class="fas fa-check text-success me-2"></i>RESTful APIs</li>
-                                <li><i class="fas fa-check text-success me-2"></i>GraphQL</li>
-                                <li><i class="fas fa-check text-success me-2"></i>Microservices</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="mt-4">
-                        <h6 class="text-primary">Experience</h6>
-                        <p>5+ years developing backend systems with expertise in database design, API development, and system architecture.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- DevOps Modal -->
-    <div class="modal fade" id="devopsModal" tabindex="-1" aria-labelledby="devopsModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="devopsModalLabel">
-                        <i class="fas fa-cloud me-2"></i>DevOps & Tools Expertise
-                    </h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <p class="mb-4">I implement DevOps practices and cloud solutions to ensure reliable, scalable deployments.</p>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <h6 class="text-primary">Cloud Platforms</h6>
-                            <ul class="list-unstyled">
-                                <li><i class="fas fa-check text-success me-2"></i>AWS & Azure</li>
-                                <li><i class="fas fa-check text-success me-2"></i>Google Cloud</li>
-                                <li><i class="fas fa-check text-success me-2"></i>Digital Ocean</li>
-                            </ul>
-                        </div>
-                        <div class="col-md-6">
-                            <h6 class="text-primary">Containerization & CI/CD</h6>
-                            <ul class="list-unstyled">
-                                <li><i class="fas fa-check text-success me-2"></i>Docker & Kubernetes</li>
-                                <li><i class="fas fa-check text-success me-2"></i>CI/CD Pipelines</li>
-                                <li><i class="fas fa-check text-success me-2"></i>Git & GitHub Actions</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="mt-4">
-                        <h6 class="text-primary">Experience</h6>
-                        <p>4+ years implementing DevOps practices, cloud infrastructure, and automated deployment pipelines.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 
     <!-- Hobbies & Personal Life Section -->
-    <section class="hobbies-section py-5 bg-blue-gradient">
+    <section class="hobbies-section py-5 bg-light">
         <div class="container">
-            <h2 class="section-title text-center mb-5">Hobbies & Personal Life</h2>
+            <h2 class="section-title text-center mb-5 text-primary">Hobbies & Personal Life</h2>
             <div class="row">
                 <div class="col-lg-3 col-md-6 mb-4">
                     <div class="hobby-card text-center">
-                        <i class="fas fa-camera hobby-icon"></i>
-                        <h5>Photography</h5>
-                        <p>Capturing moments and exploring creative composition. Love street photography and nature shots.</p>
+                        <i class="fas fa-tree hobby-icon text-primary"></i>
+                        <h5 class="text-primary">Nature</h5>
+                        <p>Love exploring the outdoors, hiking trails, and spending time in nature. Always looking for new places to discover.</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 mb-4">
                     <div class="hobby-card text-center">
-                        <i class="fas fa-hiking hobby-icon"></i>
-                        <h5>Hiking</h5>
-                        <p>Exploring nature trails and mountain peaks. Completed several challenging hiking routes.</p>
+                        <i class="fas fa-gamepad hobby-icon text-primary"></i>
+                        <h5 class="text-primary">Video Games</h5>
+                        <p>Passionate about gaming, from strategy games to action RPGs. Love the storytelling and problem-solving aspects.</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 mb-4">
                     <div class="hobby-card text-center">
-                        <i class="fas fa-book hobby-icon"></i>
-                        <h5>Reading</h5>
-                        <p>Tech books, sci-fi novels, and business literature. Always learning something new.</p>
+                        <i class="fas fa-futbol hobby-icon text-primary"></i>
+                        <h5 class="text-primary">Sports</h5>
+                        <p>Enjoy playing and watching various sports. Love the competitive spirit and teamwork that sports bring.</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 mb-4">
                     <div class="hobby-card text-center">
-                        <i class="fas fa-music hobby-icon"></i>
-                        <h5>Music</h5>
-                        <p>Playing guitar and discovering new artists. Love jazz and indie music.</p>
+                        <i class="fas fa-film hobby-icon text-primary"></i>
+                        <h5 class="text-primary">Movies</h5>
+                        <p>Big movie enthusiast, from sci-fi to dramas. Love analyzing storytelling techniques and cinematography.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
 
     <!-- Footer -->
     <footer class="footer bg-dark text-light py-5">
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 mb-4">
-                    <h5>John Doe</h5>
-                    <p>Full-Stack Developer passionate about creating exceptional digital experiences.</p>
+                    <h5>Aaditya Borse</h5>
+                    <p>Aspiring Software Developer passionate about creating exceptional digital experiences.</p>
                 </div>
                 <div class="col-lg-4 mb-4">
                     <h5>Quick Links</h5>
@@ -411,17 +396,16 @@
                 <div class="col-lg-4 mb-4">
                     <h5>Connect With Me</h5>
                     <div class="social-links">
-                        <a href="https://linkedin.com" class="text-light me-3"><i class="fab fa-linkedin"></i></a>
-                        <a href="https://github.com" class="text-light me-3"><i class="fab fa-github"></i></a>
-                        <a href="https://twitter.com" class="text-light me-3"><i class="fab fa-twitter"></i></a>
-                        <a href="mailto:john@example.com" class="text-light"><i class="fas fa-envelope"></i></a>
+                        <a href="https://www.linkedin.com/in/aaditya-borse-us/" class="text-light me-3"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/AadityaBorse26" class="text-light me-3"><i class="fab fa-github"></i></a>
+                        <span class="text-light"><i class="fas fa-envelope me-2"></i>borsea@uci.edu</span>
                     </div>
                 </div>
             </div>
             <hr class="my-4">
             <div class="row">
                 <div class="col-12 text-center">
-                    <p>&copy; 2024 John Doe. All rights reserved.</p>
+                    <p>&copy; 2024 Aaditya Borse. All rights reserved.</p>
                 </div>
             </div>
         </div>
