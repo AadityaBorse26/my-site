@@ -16,7 +16,7 @@
                 <div class="row">
                     <div class="col-md-6">
                         <h5>Aaditya Borse</h5>
-                        <p class="mb-0">Full Stack Developer & AI Enthusiast</p>
+                        <p class="mb-0">Full Stack Developer & Master'sStudent</p>
                     </div>
                     <div class="col-md-6 text-md-end">
                         <div class="social-links">
