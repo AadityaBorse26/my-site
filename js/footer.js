@@ -1,22 +1,17 @@
 /**
- * Footer Loader - Efficiently loads footer content across all pages
- * Features: Error handling, fallback content, performance optimization
+ * Footer Loader - Injects footer content across all pages
  */
 (function() {
     'use strict';
     
-    // Cache footer content to avoid multiple requests
-    let footerCache = null;
-    let isLoading = false;
-    
-    // Fallback footer HTML
-    const fallbackFooter = `
+    // Footer HTML content
+    const footerHTML = `
         <footer class="footer bg-dark text-light py-4">
             <div class="container">
                 <div class="row">
                     <div class="col-md-6">
                         <h5>Aaditya Borse</h5>
-                        <p class="mb-0">Full Stack Developer & Master'sStudent</p>
+                        <p class="mb-0">Full Stack Developer & Master's Student</p>
                     </div>
                     <div class="col-md-6 text-md-end">
                         <div class="social-links">
@@ -38,52 +33,6 @@
     `;
     
     /**
-     * Load footer content with error handling and caching
-     */
-    async function loadFooter() {
-        if (footerCache) {
-            return footerCache;
-        }
-        
-        if (isLoading) {
-            return new Promise(resolve => {
-                const checkCache = setInterval(() => {
-                    if (footerCache) {
-                        clearInterval(checkCache);
-                        resolve(footerCache);
-                    }
-                }, 50);
-            });
-        }
-        
-        isLoading = true;
-        
-        try {
-            const response = await fetch('footer.html', {
-                method: 'GET',
-                headers: {
-                    'Accept': 'text/html',
-                    'Cache-Control': 'no-cache'
-                }
-            });
-            
-            if (!response.ok) {
-                throw new Error(`HTTP ${response.status}: ${response.statusText}`);
-            }
-            
-            const footerHTML = await response.text();
-            footerCache = footerHTML;
-            return footerHTML;
-            
-        } catch (error) {
-            console.warn('Failed to load footer, using fallback:', error.message);
-            return fallbackFooter;
-        } finally {
-            isLoading = false;
-        }
-    }
-    
-    /**
      * Initialize footer on DOM ready
      */
     function initFooter() {
@@ -94,12 +43,7 @@
             return;
         }
         
-        loadFooter().then(html => {
-            footerContainer.innerHTML = html;
-        }).catch(error => {
-            console.error('Footer loading failed:', error);
-            footerContainer.innerHTML = fallbackFooter;
-        });
+        footerContainer.innerHTML = footerHTML;
     }
     
     // Initialize when DOM is ready
@@ -109,3 +53,4 @@
         initFooter();
     }
 })();
+
