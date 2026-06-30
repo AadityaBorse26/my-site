@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research - Aaditya Borse Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-code"></i> Aaditya Borse
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="projects.html">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="research.html">Research</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Research Hero -->
+    <section class="projects-hero py-5" style="padding-top: 120px !important;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h1 class="display-4 fw-bold mb-4">Research & Explorations</h1>
+                    <p class="lead text-muted mb-5">
+                        A collection of my academic research papers, project reports, and interface evaluation studies.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Research Projects Grid -->
+    <section class="projects-grid py-5">
+        <div class="container">
+            <div class="all-projects">
+                
+                <!-- Project 1 - LEO AI Tutor -->
+                <div class="project-horizontal mb-5">
+                    <div class="row align-items-center">
+                        <div class="col-lg-4">
+                            <div class="project-image-horizontal">
+                                <img src="leo_tutor.png" 
+                                     alt="LEO AI Tutor Interface Concept showing math dashboard and student progress metrics" 
+                                     class="img-fluid rounded">
+                            </div>
+                        </div>
+                        <div class="col-lg-8">
+                            <div class="project-content-horizontal">
+                                <h3 class="project-title-horizontal">LEO: Designing Transparent and Adaptive Interfaces for AI Tutors</h3>
+                                <p class="project-description-horizontal">
+                                    A Human-Computer Interaction research paper introducing LEO (Learning Education Operative), an intelligent tutoring environment for grades 6 to 12. The system addresses opaque adaptation and limited user control by integrating explainable dialogue feedback, visual reasoning traces, and direct student control over tutoring parameters.
+                                </p>
+
+                                <div class="project-links-horizontal">
+                                    <a href="LEO_Research_Paper.pdf" target="_blank" class="btn btn-outline-primary">
+                                        <i class="fas fa-file-pdf me-1"></i>Read PDF Report
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 - cs230 distributed systems fault tolerance -->
+                <div class="project-horizontal mb-5">
+                    <div class="row align-items-center">
+                        <div class="col-lg-4">
+                            <div class="project-image-horizontal">
+                                <img src="credit_card.png" 
+                                     alt="A hand presenting a credit card near a contactless transaction terminal" 
+                                     class="img-fluid rounded">
+                            </div>
+                        </div>
+                        <div class="col-lg-8">
+                            <div class="project-content-horizontal">
+                                <h3 class="project-title-horizontal">Fault-Tolerance in a Credit Card Network Through Distributed Systems</h3>
+                                <p class="project-description-horizontal">
+                                    A distributed systems project report on building a fault-tolerant transaction processing pipeline. The system implements passive replication of transaction ingestion, a majority quorum consensus mechanism with three payment processors to prevent double charges, and a causal transformer neural network model to perform real-time fraud detection.
+                                </p>
+
+                                <div class="project-links-horizontal">
+                                    <a href="https://github.com/jannikgro/distributed-systems-cc" target="_blank" class="btn btn-outline-dark me-2">
+                                        <i class="fab fa-github me-1"></i>GitHub
+                                    </a>
+                                    <a href="cs230_project_report.pdf" target="_blank" class="btn btn-outline-primary">
+                                        <i class="fas fa-file-pdf me-1"></i>Read PDF Report
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 - dark patterns iOS permissions -->
+                <div class="project-horizontal mb-5">
+                    <div class="row align-items-center">
+                        <div class="col-lg-4">
+                            <div class="project-image-horizontal">
+                                <img src="dark_patterns.png" 
+                                     alt="An iPhone screen displaying the iOS privacy and permission settings page" 
+                                     class="img-fluid rounded">
+                            </div>
+                        </div>
+                        <div class="col-lg-8">
+                            <div class="project-content-horizontal">
+                                <h3 class="project-title-horizontal">Dark Patterns, User Behavior, and User Expectations in ChatGPT and Apple Intelligence's Siri</h3>
+                                <p class="project-description-horizontal">
+                                    A survey study analyzing how mobile users interpret iOS permission flows, settings, and privacy documentation for ChatGPT and Siri. The research examines how interface design features like preselection, obstruction, and semantic ambiguity affect user consent, and suggests design guidelines to improve transparency in mobile AI interfaces.
+                                </p>
+
+                                <div class="project-links-horizontal">
+                                    <a href="dark_patterns_ios_permissions.pdf" target="_blank" class="btn btn-outline-primary">
+                                        <i class="fas fa-file-pdf me-1"></i>Read PDF Report
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 - cs223 optimistic and conservative concurrency control -->
+                <div class="project-horizontal mb-5">
+                    <div class="row align-items-center">
+                        <div class="col-lg-4">
+                            <div class="project-image-horizontal">
+                                <img src="database_project.png" 
+                                     alt="A professional stock photo of active datacenter server drives representing concurrent key-value stores" 
+                                     class="img-fluid rounded">
+                            </div>
+                        </div>
+                        <div class="col-lg-8">
+                            <div class="project-content-horizontal">
+                                <h3 class="project-title-horizontal">An Analysis of Optimistic and Conservative Concurrency Control in Multi-Threaded Key-Value Stores</h3>
+                                <p class="project-description-horizontal">
+                                    A database systems project evaluating two transactional concurrency control protocols, Optimistic Concurrency Control (OCC) and Conservative Two-Phase Locking (C2PL), built on top of a RocksDB storage layer. The paper evaluates their performance and scaling under varying thread parallelism and hot-key data contention.
+                                </p>
+                                <div class="project-links-horizontal">
+                                    <a href="https://github.com/AadityaBorse26/223proj" target="_blank" class="btn btn-outline-dark me-2">
+                                        <i class="fab fa-github me-1"></i>GitHub
+                                    </a>
+                                    <a href="CS223_Project.pdf" target="_blank" class="btn btn-outline-primary">
+                                        <i class="fas fa-file-pdf me-1"></i>Read PDF Report
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Container -->
+    <div id="footer-container"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/footer.js"></script>
+</body>
+</html>
