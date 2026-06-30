@@ -7,9 +7,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css?v=1.0.3">
 </head>
-<body>
+<body class="homepage">
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container">
@@ -42,166 +42,182 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero-section">
-        <div class="hero-background">
-            <div class="hero-shapes">
-                <div class="shape shape-1"></div>
-                <div class="shape shape-2"></div>
-                <div class="shape shape-3"></div>
+    <section class="bento-hero">
+        <div class="homepage-hero-inner">
+            <div class="hero-text-col">
+                <div class="homepage-badge-available mb-3 d-inline-block">
+                    <span class="pulsing-dot"></span>Available for Work
+                </div>
+                <h1 class="bento-hero-title">Aaditya Borse</h1>
+                <p class="bento-hero-subtitle">Software Developer & AI Researcher</p>
+                <p class="bento-hero-description">
+                    I build high-performance web applications, distributed systems pipelines, and conduct Human-Computer Interaction research at the intersection of AI and interfaces.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#featured-projects" class="btn btn-homepage-primary me-3">
+                        <i class="fas fa-folder-open me-2"></i>View Projects
+                    </a>
+                    <a href="contact.html" class="btn btn-homepage-outline">
+                        <i class="fas fa-envelope me-2"></i>Contact Me
+                    </a>
+                </div>
             </div>
-        </div>
-        <div class="container">
-            <div class="row align-items-center min-vh-100">
-                <div class="col-lg-6">
-                    <div class="hero-content">
-                        <div class="hero-badge mb-3">
-                            <i class="fas fa-code me-2"></i>
-                            Available for Work
-                        </div>
-                        <h1 class="hero-title">Hello,<br>I'm Aaditya Borse</h1>
-                        <p class="hero-subtitle">Aspiring Software Developer</p>
-                        <p class="hero-description">
-                            I create functional, user-centered digital technologies. 
-                            With expertise in modern web technologies, I bring ideas to life through code.
-                        </p>
-                        <!-- <div class="hero-stats mb-4">
-                            <div class="stat-item">
-                                <h4>50+</h4>
-                                <p>Projects Completed</p>
-                            </div>
-                            <div class="stat-item">
-                                <h4>3+</h4>
-                                <p>Years Experience</p>
-                            </div>
-                            <div class="stat-item">
-                                <h4>100%</h4>
-                                <p>Client Satisfaction</p>
-                            </div>
-                        </div> -->
-                        <div class="hero-buttons">
-                            <a href="about.html" class="btn btn-primary btn-lg me-3">
-                                <i class="fas fa-user me-2"></i>Learn More
-                            </a>
-                            <a href="contact.html" class="btn btn-outline-primary btn-lg">
-                                <i class="fas fa-envelope me-2"></i>Get In Touch
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="hero-image-container">
-                        <img src="Aaditya Borse_11.02.2023-13.jpg" 
-                             alt="Professional headshot of Aaditya Borse, a confident software developer" 
-                             class="hero-image">
-                    </div>
-                </div>
+            <div class="hero-image-col text-center mt-4 mt-lg-0">
+                <img src="Aaditya Borse_11.02.2023-13.jpg" 
+                     alt="Professional headshot of Aaditya Borse, a confident software developer" 
+                     class="bento-hero-image">
             </div>
         </div>
     </section>
 
+    <main class="homepage-main-container">
 
-    <!-- Introduction Section -->
-    <section class="introduction-section py-5 bg-light-gradient">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h2 class="section-title text-center mb-5">Introduction</h2>
-                    <div class="intro-content">
-                        <p class="intro-text mb-4">
-                            I'm passionate about software development with a strong foundation in computer science and a drive to create innovative solutions. 
-                            I am currently pursuing my Master's degree while working on research that pushes the intersection of HCI and AI.
-                        </p>
-                        <p class="intro-text mb-4">
-                            My journey in technology began with a curiosity for how things work, which led me to pursue computer science. 
-                            I specialize in full-stack development, with particular expertise in cloud computing platforms and UI/UX design.
-                        </p>
-                        <p class="intro-text mb-0">
-                            When I'm not coding, you'll find me exploring the latest tech trends, trying to keep up with the newest AI models, 
-                            or going outside and enjoying the sunshine.
+            <!-- Modern 2-Column Split Layout -->
+            <div class="homepage-split-layout row">
+                <!-- Left Column (60% width on desktop): Background & Experience -->
+                <div class="col-lg-7 layout-left-col">
+                    <!-- About Me Card -->
+                    <div class="homepage-card mb-4">
+                        <h3 class="homepage-section-title accent-header mb-4">
+                            <i class="fas fa-user-circle text-primary me-2"></i>Introduction
+                        </h3>
+                        <p class="about-lead-text mb-4">
+                            I am a graduate student pursuing my Master's degree in Computer Science at the University of California, Irvine. I focus on developing robust, user-centered digital solutions and conducting HCI research to make AI interfaces more transparent and explainable.
                         </p>
                     </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Current Education Section -->
-    <section class="education-section py-5 bg-white-gradient">
-        <div class="container">
-            <h2 class="section-title text-center mb-5">Current Education</h2>
-            <div class="row align-items-center">
-                <div class="col-lg-8">
-                    <div class="education-content">
-                        <div class="education-item">
-                            <div class="education-icon">
-                                <i class="fas fa-graduation-cap"></i>
-                            </div>
-                            <div class="education-details">
-                                <h4>Master of Science in Computer Science</h4>
-                                <p class="education-institution">University of California, Irvine</p>
-                                <p class="education-duration">2025 - Present</p>
-                                <p class="education-description">
-                                    Currently pursuing advanced studies in AI/ML, Distributed Networking and Human-Computer Interaction. 
-                                    Focus on deep learning applications and research in data analysis and visualization.
+                    <!-- Background & Experience Card -->
+                    <div class="homepage-card">
+                        <h3 class="homepage-section-title accent-header mb-4">
+                            <i class="fas fa-graduation-cap text-primary me-2"></i>Current Education
+                        </h3>
+                        <div class="row align-items-center">
+                            <div class="col-md-7">
+                                <h4 class="uci-status-title">M.S. in Computer Science</h4>
+                                <div class="uci-status-meta mb-3">University of California, Irvine | 2025 - Present</div>
+                                <p class="uci-status-desc mb-0">
+                                    Currently pursuing advanced graduate studies at UCI, focusing on Artificial Intelligence, Distributed Systems pipelines, and Human-Computer Interaction.
                                 </p>
                             </div>
+                            <div class="col-md-5 text-center mt-3 mt-md-0">
+                                <img src="https://static1.squarespace.com/static/5b60d4fa70e802968763e7f5/5b71b8d0aa4a992d00a1259d/5be1f517575d1f74af5fa60a/1604360466352/Campus.jpg?format=1500w&fit=crop" 
+                                     alt="UC Irvine campus with modern architecture and palm trees" 
+                                     class="uci-campus-image">
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 text-center">
-                    <img src="https://static1.squarespace.com/static/5b60d4fa70e802968763e7f5/5b71b8d0aa4a992d00a1259d/5be1f517575d1f74af5fa60a/1604360466352/Campus.jpg?format=1500w&fit=crop" 
-                         alt="UC Irvine campus with modern architecture and palm trees" 
-                         class="img-fluid rounded shadow-lg">
+
+                <!-- Right Column (40% width on desktop): Technical Expertise -->
+                <div class="col-lg-5 layout-right-col mt-4 mt-lg-0">
+                    <div class="homepage-card">
+                        <h3 class="homepage-section-title accent-header mb-4">
+                            <i class="fas fa-laptop-code text-primary me-2"></i>Technical Expertise
+                        </h3>
+                        <div class="skills-category-block">
+                            <h4 class="skills-category-subtitle">Languages & Core</h4>
+                            <div class="bento-tags">
+                                <span class="bento-tag tag-language">Python</span>
+                                <span class="bento-tag tag-language">TypeScript</span>
+                                <span class="bento-tag tag-language">JavaScript</span>
+                                <span class="bento-tag tag-language">HTML5/CSS3</span>
+                            </div>
+                        </div>
+                        <div class="skills-category-block">
+                            <h4 class="skills-category-subtitle">Frameworks & Libs</h4>
+                            <div class="bento-tags">
+                                <span class="bento-tag tag-framework">React</span>
+                                <span class="bento-tag tag-framework">Node.js</span>
+                                <span class="bento-tag tag-framework">Flask</span>
+                                <span class="bento-tag tag-framework">Django</span>
+                                <span class="bento-tag tag-framework">Bootstrap</span>
+                            </div>
+                        </div>
+                        <div class="skills-category-block">
+                            <h4 class="skills-category-subtitle">Tools & Cloud</h4>
+                            <div class="bento-tags">
+                                <span class="bento-tag tag-tool">AWS</span>
+                                <span class="bento-tag tag-tool">Docker</span>
+                                <span class="bento-tag tag-tool">PostgreSQL</span>
+                                <span class="bento-tag tag-tool">Git/GitHub</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <!-- Featured Projects Section -->
-    <section class="featured-projects-section py-5 bg-light-gradient">
-        <div class="container">
-            <h2 class="section-title text-center mb-5">Featured Projects</h2>
-            <div class="row">
-                <div class="col-lg-6 mb-4">
-                    <div class="featured-project-card">
-                        <div class="project-image-wrapper">
+
+
+            <!-- Featured Projects (Separate Grid Block) -->
+            <div id="featured-projects" class="pt-5 mt-4">
+                <div class="d-flex align-items-center justify-content-between mb-4">
+                    <h2 class="h3 fw-bold text-dark m-0">Featured Projects</h2>
+                    <a href="projects.html" class="fw-semibold text-decoration-none d-flex align-items-center gap-1" style="color: var(--primary-color);">
+                        View all projects <i class="fas fa-arrow-right small"></i>
+                    </a>
+                </div>
+                
+                <div class="featured-projects-grid">
+                    
+                    <!-- Project 1: LeTherapy -->
+                    <div class="bento-project-card">
+                        <div class="position-relative">
                             <img src="https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/003/237/024/datas/gallery.jpg" 
-                                 alt="LeTherapy Hub - AI-powered therapy platform with LeBron James simulation" 
-                                 class="img-fluid rounded">
+                                 alt="LeTherapy Hub AI platform" 
+                                 class="bento-project-img">
+                            <span class="badge-featured-winner">
+                                <i class="fas fa-trophy me-1"></i>1st Place Winner
+                            </span>
                         </div>
-                        <div class="project-content">
-                            <h4>LeTherapy <i class="fas fa-trophy text-warning"></i></h4>
-                            <p>Connect, Converse, and Grow with AI LeBron – Real-Time Text, Voice, and Video Therapy Powered by the King of Basketball. Provides custom therapy from the King himself, allowing users to chat with LeBron via text, voice, or video messages using our multi-modal AI pipeline.</p>
-                            <a href="projects.html" class="btn btn-primary">View Project</a>
+                        <div class="bento-project-body">
+                            <div class="bento-project-title">LeTherapy</div>
+                            <p class="bento-project-desc">
+                                AI-powered therapy simulation enabling real-time multi-modal text, voice, and video messaging with a sports-personality AI agent. Integrates voice synthesis pipelines and WebRTC APIs.
+                            </p>
+                            <div class="bento-tags mb-3">
+                                <span class="bento-tag tag-language">Python</span>
+                                <span class="bento-tag tag-framework">React</span>
+                                <span class="bento-tag tag-framework">Flask</span>
+                                <span class="bento-tag tag-tool">OpenAI</span>
+                            </div>
+                            <a href="projects.html" class="bento-project-link">
+                                Project details <i class="fas fa-external-link-alt"></i>
+                            </a>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-6 mb-4">
-                    <div class="featured-project-card">
-                        <div class="project-image-wrapper">
-                            <img src="stride.png" 
-                                 alt="Stride fitness app interface showing running data and map navigation" 
-                                 class="img-fluid rounded">
-                        </div>
-                        <div class="project-content">
-                            <h4>Stride</h4>
-                            <p>An innovative platform for data analysis and visualization. Built with modern web technologies to provide comprehensive insights and interactive dashboards for data-driven decision making.</p>
-                            <a href="projects.html" class="btn btn-primary">View Project</a>
+
+                    <!-- Project 2: Stride -->
+                    <div class="bento-project-card">
+                        <img src="stride.png" 
+                             alt="Stride fitness app interface" 
+                             class="bento-project-img">
+                        <div class="bento-project-body">
+                            <div class="bento-project-title">Stride</div>
+                            <p class="bento-project-desc">
+                                Innovative interactive platform for fitness data tracking and analysis. Built with responsive dashboard UI to visualize route statistics, user speed metrics, and GPS run navigation.
+                            </p>
+                            <div class="bento-tags mb-3">
+                                <span class="bento-tag tag-language">JavaScript</span>
+                                <span class="bento-tag tag-framework">CSS3</span>
+                                <span class="bento-tag tag-framework">HTML5</span>
+                                <span class="bento-tag tag-tool">API</span>
+                            </div>
+                            <a href="projects.html" class="bento-project-link">
+                                Project details <i class="fas fa-external-link-alt"></i>
+                            </a>
                         </div>
                     </div>
+
                 </div>
             </div>
+
         </div>
-    </section>
-
-
-
-
+    </main>
 
     <!-- Footer Container -->
     <div id="footer-container"></div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="js/footer.js"></script>
+    <script src="js/footer.js?v=1.0.3"></script>
 </body>
 </html>

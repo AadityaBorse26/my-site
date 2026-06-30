@@ -7,7 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css?v=1.0.3">
 </head>
 <body>
     <!-- Navigation -->
@@ -42,13 +42,13 @@
     </nav>
 
     <!-- Projects Hero -->
-    <section class="projects-hero py-5" style="padding-top: 120px !important;">
+    <section class="projects-hero" style="padding-top: 130px !important; padding-bottom: 48px !important;">
         <div class="container">
             <div class="row">
-                <div class="col-lg-8 mx-auto text-center">
-                    <h1 class="display-4 fw-bold mb-4">My Projects</h1>
-                    <p class="lead text-muted mb-5">
-                        A collection of my recent work, showcasing various technologies and problem-solving approaches.
+                <div class="col-lg-12">
+                    <h1 class="projects-title">Projects</h1>
+                    <p class="projects-subtitle">
+                        A showcase of my software development projects, tools, and technical work.
                     </p>
                 </div>
             </div>
@@ -56,12 +56,11 @@
     </section>
 
     <!-- Projects Grid -->
-    <section class="projects-grid py-5">
+    <section class="projects-grid">
         <div class="container">
 
             <!-- All Projects -->
             <div class="all-projects">
-                <h2 class="section-title mb-4">All Projects</h2>
                 
                 <!-- Project 1 - LeTherapy -->
                 <div class="project-horizontal mb-5">
@@ -81,12 +80,12 @@
                                     Provides custom therapy from the King himself, allowing users to chat with LeBron via text, voice, or video messages 
                                     using our multi-modal AI pipeline. Features seamless API integration, real-time interactions, and advanced AI voice synthesis.
                                 </p>
-                                <div class="tech-stack-horizontal mb-3">
-                                    <span class="tech-tag">Python</span>
-                                    <span class="tech-tag">React</span>
-                                    <span class="tech-tag">OpenAI</span>
-                                    <span class="tech-tag">Flask</span>
-                                    <span class="tech-tag">Tailwind</span>
+                                <div class="bento-tags mb-3">
+                                    <span class="bento-tag tag-language">Python</span>
+                                    <span class="bento-tag tag-framework">React</span>
+                                    <span class="bento-tag tag-tool">OpenAI</span>
+                                    <span class="bento-tag tag-framework">Flask</span>
+                                    <span class="bento-tag tag-framework">Tailwind</span>
                                 </div>
                                 <div class="project-links-horizontal">
                                     <a href="https://github.com" class="btn btn-outline-dark me-2">
@@ -156,6 +155,12 @@
                                     to provide comprehensive insights and interactive dashboards for data-driven decision making. 
                                     Features advanced analytics, real-time data processing, and intuitive user interfaces.
                                 </p>
+                                <div class="bento-tags mb-3">
+                                    <span class="bento-tag tag-language">JavaScript</span>
+                                    <span class="bento-tag tag-framework">CSS3</span>
+                                    <span class="bento-tag tag-framework">HTML5</span>
+                                    <span class="bento-tag tag-tool">API</span>
+                                </div>
                                 <div class="project-links-horizontal">
                                     <a href="https://github.com" class="btn btn-outline-dark me-2">
                                         <i class="fab fa-github me-1"></i>GitHub
@@ -187,6 +192,12 @@
                                     Realsy uses a swipe left/right function to provide users with a simpler experience for finding and contacting agents quickly. 
                                     Built with React.js, Flask, CockroachDB, and web scraping technology.
                                 </p>
+                                <div class="bento-tags mb-3">
+                                    <span class="bento-tag tag-framework">React.js</span>
+                                    <span class="bento-tag tag-framework">Flask</span>
+                                    <span class="bento-tag tag-tool">CockroachDB</span>
+                                    <span class="bento-tag tag-tool">Web Scraping</span>
+                                </div>
                                 <div class="project-links-horizontal">
                                     <a href="https://github.com/bkim3164/realsy" class="btn btn-outline-dark me-2">
                                         <i class="fab fa-github me-1"></i>GitHub
@@ -218,6 +229,12 @@
                                     for user feedback and a web interface for attendance tracking. Built with Raspberry Pi, Python, SQL database, 
                                     and NGINX server for easy admin access to attendance logs.
                                 </p>
+                                <div class="bento-tags mb-3">
+                                    <span class="bento-tag tag-tool">Raspberry Pi</span>
+                                    <span class="bento-tag tag-language">Python</span>
+                                    <span class="bento-tag tag-language">SQL</span>
+                                    <span class="bento-tag tag-tool">NGINX</span>
+                                </div>
                                 <div class="project-links-horizontal">
                                     <a href="https://github.com/AadityaBorse26/Aaditya-BSE-Portfolio" class="btn btn-outline-dark me-2">
                                         <i class="fab fa-github me-1"></i>GitHub
@@ -275,6 +292,6 @@
     <div id="footer-container"></div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="js/footer.js"></script>
+    <script src="js/footer.js?v=1.0.3"></script>
 </body>
 </html>
